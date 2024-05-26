@@ -1,1 +1,1 @@
-E-commerce website user interface with figma, html and css.
+E-commerce website user interface with html and css.
