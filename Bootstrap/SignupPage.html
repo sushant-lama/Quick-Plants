@@ -71,6 +71,24 @@
         top: 12px;
         right: -100px;
         }
+
+        a{
+          text-decoration: none;
+        }
+
+        #exampleInputText1::placeholder{
+          color: black;
+        }
+        #exampleInputEmail1::placeholder{
+          color: black;
+        }
+        #exampleInputPassword1::placeholder{
+          color: black;
+        }
+
+        .btn-primary:hover{
+          background-color: #48a715;
+        }
         
     </style>
 
@@ -83,10 +101,18 @@
                 </h1>
 
                 <div style="margin-top: 30px; text-align: center;">
-                    <i class="fa-brands fa-facebook fa-2x" style="margin-inline:20px"></i>
-                    <i class="fa-brands fa-x-twitter fa-2x" style="margin-inline:20px"></i>
-                    <i class="fa-brands fa-google fa-2x" style="margin-inline:20px"></i>
-                    <i class="fa-brands fa-instagram fa-2x" style="margin-inline:20px"></i>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook fa-2x" style="margin-inline:20px"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-x-twitter fa-2x" style="margin-inline:20px"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-google fa-2x" style="margin-inline:20px"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram fa-2x" style="margin-inline:20px"></i>
+                    </a>
                 </div>
 
                 <div style="text-align: center;">
@@ -98,32 +124,40 @@
                 <form>
 
                     <div>
-                        <div class="mb-3" style="margin-top: 30px;">
+                        <div class="mb-3 d-flex justify-content-center" style="margin-top: 30px;">
                             <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Username">
+                            <input type="text" class="form-control" id="exampleInputText1" placeholder="Username" style="width: 490px; height: 50px; background-color: #B9B4B4;">
                           </div>
-                        <div class="mb-3" style="margin-top: 30px;">
+                        <div class="mb-3 d-flex justify-content-center" style="margin-top: 30px;">
                           <!-- <label for="exampleInputEmail1" class="form-label">Email</label> -->
-                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"> 
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" style="width: 490px; height: 50px; background-color: #B9B4B4;"> 
                         </div>
-                        <div class="mb-3" style="margin-top: 30px;">
+                        <div class="mb-3 d-flex justify-content-center" style="margin-top: 30px;">
                           <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" style="width: 490px; height: 50px; background-color: #B9B4B4;">
                         </div>
                     </div>
 
-                    <div class="mb-3 form-check" style="margin-top: 50px;">
+                    <div class="mb-3 form-check d-flex justify-content-center" style="margin-top: 50px;">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1" style="font-weight: 500;">I agreee to the terms and conditions</label>
+                      <!-- <label class="form-check-label" for="exampleCheck1" style="font-weight: 500;">I agreee to the terms and conditions</label> -->
+                       <p style="margin-left: 10px;">I agree to the</p>
+                       <a href="#" style=" margin-top: -1px; color: red; font-size: 18px; font-weight: 500; margin-left: 7px;">Terms and Conditions</a>
                     </div>
 
-                    <div style="text-align: center; margin-top: 30px;">
-                        <button type="submit" class="btn btn-primary" style="margin-top: 34px;">Sign up</button>
-                        <p style="margin-top: 30px; font-weight: 500;">Already have an account? sign in</p>
+                    <div style="margin-top: 30px; text-align: center;">
+                      <button type="submit" class="btn btn-primary">Sign up</button>
+                    </div>
+
+                    <div class="d-flex flex-row justify-content-center" style="text-align: center; margin-top: 30px;">
+                        <p style="font-weight: 500;">Already have an account?</p>
+                        <a href="#" style="margin-top: -3px; margin-left: 7px; font-weight: 500; font-size: 20px; color: red;">Sign in</a>
                     </div>
                   </form>
                   <!-- <button type="button" class="btn btn-primary">Primary</button> -->
             </div>
+
+
             <div class="col-lg-6">
                 <img src="../images/3175659 1.png" alt="image">
             </div>
